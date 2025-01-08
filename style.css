@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: rgb(55, 77, 66);
+    color: #fff;
+    font-family: roboto;
+    
+
+}
+:placeholder-shown{
+    direction:rtl ;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px  0 ;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border:none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    transition: 0.3s;
+    color:#fff;
+}
+
+input:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+.price {
+    display: flex;
+   align-items: center;
+   gap: 5px;
+   direction: rtl;
+  
+}
+.price input{
+    width: 60%;
+}
+#total{
+    background-color: red;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-wrap: nowrap;
+  
+}
+
+#total::before{
+    content:'المجموع : '
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 255, 157, 0.74);
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:15px;
+    margin: 5px;
+   
+}
+
+button:hover{
+    background-color: aqua;
+    letter-spacing: 1px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+@media (max-width : 767px){
+    .btnsearch  {
+       flex-direction: column;
+       
+    }
+}
+
+
+table{
+width: 100%;
+text-align: center;
+margin: 10px 0;
+
+}
+table th{
+    text-transform:uppercase;
+    font-weight: 500;
+}
+th, td{
+    padding: 5px;
+}
