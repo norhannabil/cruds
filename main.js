@@ -61,7 +61,7 @@ if(title.value != ''
   && price.value != '' 
   && category.value != '' 
   && newPro.count <100 ){
-  if(mood === 'create'){
+  if(mood === 'creat'){
     if(newPro.count > 1){
       for(let i = 0; i < newPro.count;i++ ){
         dataPro.push(newPro);
@@ -71,8 +71,8 @@ if(title.value != ''
     }
         }else{
          dataPro[ tmp ] = newPro;
-         mood = 'create';
-         submit.innerHTML = 'create';
+         mood = 'creat';
+         submit.innerHTML = 'creat';
          count.style.display= 'block'
     
         }
